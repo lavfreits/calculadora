@@ -1,16 +1,25 @@
-# calculadora
+# Calculadora Flutter
 
-A new Flutter project.
+Um aplicativo de calculadora simples desenvolvido usando Flutter. Este projeto foi criado para fins de aprendizado e prática.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Capturas de Tela
 
-A few resources to get you started if this is your first Flutter project:
+  <img src="screenshot.png" width="360" height="790"alt="Screenshot">
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Recursos
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Operações aritméticas básicas: adição, subtração, multiplicação, divisão.
+- Botão Limpar (`AC`) para redefinir o cálculo.
+- Botão Apagar (`DEL`) para remover o último dígito.
+- Exibe a expressão atual e o resultado dinamicamente.
+
+
+## Estrutura do Projeto
+
+- `main.dart`: Ponto de entrada da aplicação.
+- `calculator.dart`: Contém a lógica principal da calculadora e a interface do usuário.
+- `widgets/buttons.dart`: Widget de botão personalizado.
+- `widgets/display_widget.dart`: Widget de exibição para mostrar a expressão e o resultado.
+
+

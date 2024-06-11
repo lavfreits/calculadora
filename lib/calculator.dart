@@ -1,8 +1,8 @@
 import 'package:calculadora/widgets/display_widget.dart';
-
-import 'widgets/buttons.dart';
 import 'package:flutter/material.dart';
 import 'package:math_expressions/math_expressions.dart';
+
+import 'widgets/buttons.dart';
 
 class CalculatorPage extends StatefulWidget {
   const CalculatorPage({super.key});
@@ -93,7 +93,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                           setState(() {
                             userQuestion = userQuestion.isNotEmpty
                                 ? userQuestion.substring(
-                                0, userQuestion.length - 1)
+                                    0, userQuestion.length - 1)
                                 : '';
                           });
                         },
@@ -111,8 +111,12 @@ class _CalculatorPageState extends State<CalculatorPage> {
                             setState(() {
                               if (isOperator(buttons[index])) {
                                 if (numberPressed) {
-                                  if (previousResult != 0.0) {
-                                    userQuestion = previousResult.toString() + buttons[index];
+                                  if (previousResult != 0.0 &&
+                                      lastOperator != '' &&
+                                      userQuestion != '' &&
+                                      userAnswer != '') {
+                                    userQuestion = previousResult.toString() +
+                                        buttons[index];
                                     userAnswer = '';
                                     isEqualPressed = false;
                                     numberPressed = false;
@@ -152,7 +156,6 @@ class _CalculatorPageState extends State<CalculatorPage> {
     String finalQuestion = userQuestion;
     finalQuestion = finalQuestion.replaceAll('x', '*');
     finalQuestion = finalQuestion.replaceAll(',', '.');
-
 
     Parser p = Parser();
     Expression exp = p.parse(finalQuestion);

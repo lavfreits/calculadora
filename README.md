@@ -4,7 +4,7 @@ Um aplicativo de calculadora simples desenvolvido usando Flutter. Este projeto f
 
 
 ## Capturas de Tela
-<img src="screeshot" alt="Screenshot" width="360" height="790">
+<img src="screenshot.png" alt="Screenshot" width="360" height="790">
 
 
 ## Recursos

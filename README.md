@@ -4,8 +4,8 @@ Um aplicativo de calculadora simples desenvolvido usando Flutter. Este projeto f
 
 
 ## Capturas de Tela
+<img src="screeshot" alt="Screenshot" width="360" height="790">
 
-  <img src="screenshot.png" width="360" height="790"alt="Screenshot">
 
 ## Recursos
 
@@ -21,5 +21,3 @@ Um aplicativo de calculadora simples desenvolvido usando Flutter. Este projeto f
 - `calculator.dart`: Contém a lógica principal da calculadora e a interface do usuário.
 - `widgets/buttons.dart`: Widget de botão personalizado.
 - `widgets/display_widget.dart`: Widget de exibição para mostrar a expressão e o resultado.
-
-
